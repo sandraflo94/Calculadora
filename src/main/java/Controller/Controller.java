@@ -20,13 +20,25 @@ public class Controller {
     public double getFormulaProduto(){
         return Numero.formulaProduto();
 
-
     }
 
     public void mostrarResultado(){
         Numero.mostrarResultado();
     }
 
+    public  boolean getVerificarNumeroPrimo(){
+        Numero.verifarNumeroPrimo();
+        return true;
+    }
+
+    public double getCalculoFatorial() {
+        return  Numero.calcularFatorial();;
+    }
+
+
+    public double getCalculoXelevadoY(){
+        return Numero.calcXelevadoY();
+    }
 
 
 }
