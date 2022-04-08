@@ -8,4 +8,25 @@ public class Controller {
         return Numero.formulaSubtracao(x, y);
     }
 
+    public double getFormulaSoma(){
+        return  Numero.formulaSoma();
+    }
+
+    public double getFormulaQuociente( double x, double y){
+        return Numero.formulaQuociente (x,y);
+
+    }
+
+    public double getFormulaProduto(){
+        return Numero.formulaProduto();
+
+
+    }
+
+    public void mostrarResultado(){
+        Numero.mostrarResultado();
+    }
+
+
+
 }
