@@ -10,4 +10,7 @@ public class Numero {
     public double calcXelevadoY(double x, double y){
         return Math.pow(x,y);
     }
+
+
+
 }

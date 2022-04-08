@@ -23,9 +23,10 @@ public class Controller {
 
     }
 
-    public double mostrarResultado(){
-        return Numero.mostrarResultado();
+    public void mostrarResultado(){
+        Numero.mostrarResultado();
     }
+
 
 
 }
