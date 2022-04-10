@@ -130,4 +130,7 @@ fabric.properties
 hs_err_pid*
 replay_pid*
 
-/.idea/vcs.xml
+.idea
+/.idea/
+/.idea/
+/.idea/
