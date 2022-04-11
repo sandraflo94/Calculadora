@@ -2,8 +2,21 @@ package model;
 
 public class Calculadora {
 
-//    private double x;
-//    private double y;
+    private Double temp;
+
+    public Calculadora(Double temp) {
+        this.temp = temp;
+    }
+
+    public Double getTemp() {
+        return temp;
+    }
+
+    public void setTemp(Double temp) {
+        this.temp = temp;
+    }
+
+    //    private double y;
 //
 //    public double getX() {
 //        return x;
@@ -29,8 +42,8 @@ public class Calculadora {
     }
 
     // 4-Obter o quociente de dois números
-    public static double formulaQuociente(double x, double y) {
-        return x / y;
+    public static double formulaQuociente(double x, double y){
+        return  x / y;
     }
 
     // 8-Calcular o valor de x^y
@@ -67,7 +80,7 @@ public class Calculadora {
 
 
 
-// primo para a frente
+    // 10-primo para a frente
     public static boolean verificarSeNumeroEPrimo(int x) {
         for (int j = 2; j < x; j++) {
             if (x % j == 0) {
@@ -83,4 +96,16 @@ public class Calculadora {
     public static String converterHexadecimal(double x) {
         return Double.toHexString(x);
     }
+
+    //5-Memorizar o resultado de uma operação
+    public void resultadoMemorizar(double x){
+        setTemp(x);
+    }
+
+    //6-Apagar o resultado de uma operação
+    public void resultadoApagar(){
+        this.temp=null;
+    }
+
+
 }

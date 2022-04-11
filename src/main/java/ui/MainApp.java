@@ -33,13 +33,14 @@ public class MainApp {
 
         Scanner ler = new Scanner(System.in);
         int opcao;
+        Calculadora temp = null;
 
 
         double x;
         double y;
 
         do {
-            System.out.println("\n1-Soma\n2-Produto\n3-Subtração\n4-Quociente\n8-x^y\n9-Factorial\n0-Sair.\n" +
+            System.out.println("\n1-Soma\n2-Produto\n3-Subtração\n4-Quociente\n5-Memorizar\n6-Reaproveitar\n8-x^y\n9-Factorial\n0-Sair.\n" +
                     "Qual a operação que quer realizar?\n11-Verificar se o número é igual à soma dos cubos\n14-Indique um número");
             opcao = ler.nextInt();
             switch (opcao) {
@@ -73,6 +74,20 @@ public class MainApp {
                     System.out.println("Indique o segundo número da divisão");
                     y = ler.nextDouble();
                     System.out.println(Calculadora.formulaQuociente(x, y));
+                }
+                case 5: {
+                    System.out.println("Memorizar o último resultado");
+                    x = ler.nextDouble();
+                    assert temp != null;
+                    temp.resultadoMemorizar(x);
+                    System.out.println("Valor memorizado");;
+                }
+                case 6: {
+                    System.out.println("Apagar o último resultado");
+                    x = ler.nextDouble();
+                    assert temp != null;
+                    temp.resultadoApagar();
+                    System.out.println("Valor apagado");;
                 }
                 case 8: {
                     System.out.println("Indique a base");
