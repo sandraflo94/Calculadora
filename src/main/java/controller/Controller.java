@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 import model.Calculadora;
 
@@ -26,11 +26,12 @@ public class Controller {
 //        public void mostrarResultado(double x,double y){
 //            Calculadora.mostrarResultado(x,y);
 //        }
+    public String converterBinarioDecimal(int x){return Calculadora.decimalParaBinario(x);}
 
-        public  boolean getVerificarNumeroPrimo(double x){
+        /*public  boolean getVerificarNumeroPrimo(double x){
             Calculadora.verificarSeNumeroEPrimo((int) x);
             return true;
-        }
+        }*/
 
         public double getCalculoFatorial(double x) {
             return  Calculadora.factorial(x);

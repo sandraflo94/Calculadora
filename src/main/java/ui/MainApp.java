@@ -33,14 +33,16 @@ public class MainApp {
 
         Scanner ler = new Scanner(System.in);
         int opcao;
+        Calculadora temp = null;
 
 
         double x;
         double y;
+        int z;
 
         do {
-            System.out.println("\n1-Soma\n2-Produto\n3-Subtração\n4-Quociente\n8-x^y\n9-Factorial\n0-Sair.\n" +
-                    "Qual a operação que quer realizar?\n11-Verificar se o número é igual à soma dos cubos\n14-Indique um número");
+            System.out.println("\n1-Soma\n2-Produto\n3-Subtração\n4-Quociente\n5-Memorizar\n6-Reaproveitar\n8-x^y\n9-Factorial\n0-Sair.\n" +
+                    "Qual a operação que quer realizar?\n11-Verificar se o número é igual à soma dos cubos\n12-Decimal para Binário\n13-Binário para Decimal\n14-Indique um número");
             opcao = ler.nextInt();
             switch (opcao) {
                 case 1: {
@@ -96,6 +98,18 @@ public class MainApp {
                     break;
                 }
 
+                case 12:{
+                    System.out.println("Indique o número");
+                    x = ler.nextDouble();
+                    System.out.println(Calculadora.decimalParaBinario((int) x));
+                }
+
+                case 13: {
+                    System.out.println("Indique o número");
+                    z = ler.nextInt();
+                    System.out.println(Calculadora.binaryToDecimal(z));
+                    break;
+                }
                 case 14: {
                     System.out.println("Indique o número");
                     x = ler.nextDouble();
