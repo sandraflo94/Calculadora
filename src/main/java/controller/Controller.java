@@ -40,4 +40,8 @@ public class Controller {
 //            return Numero.calcXelevadoY();
 //        }
 
+    public String converterHexadecimal(double x) {
+        return Calculadora.converterHexadecimal(x);
+    }
+
 }

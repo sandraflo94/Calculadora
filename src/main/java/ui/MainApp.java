@@ -87,6 +87,12 @@ public class MainApp {
                     System.out.println(Calculadora.factorial(x));
                     // break;
                 }
+                case 14: {
+                    System.out.println("Indique o número");
+                    x = ler.nextDouble();
+                    System.out.println(Calculadora.converterHexadecimal(x));
+                    break;
+                }
             }
         }
         while (opcao != 0);
