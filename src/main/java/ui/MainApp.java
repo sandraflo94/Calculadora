@@ -77,6 +77,20 @@ public class MainApp {
                     y = ler.nextDouble();
                     System.out.println(Calculadora.formulaQuociente(x, y));
                 }
+                case 5: {
+                    System.out.println("Memorizar o resultado");
+                    x = ler.nextDouble();
+                    assert temp!=null;
+                    temp.resultadoMemorizar(x);
+
+                }
+                case 6: {
+                    System.out.println("Apagar o resultado Memorizado");
+                    x = ler.nextDouble();
+                    assert  temp!=null;
+                    temp.resultadoApagar();
+
+                }
                 case 8: {
                     System.out.println("Indique a base");
                     x = ler.nextDouble();
