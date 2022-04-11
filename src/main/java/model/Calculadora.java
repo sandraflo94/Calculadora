@@ -14,27 +14,27 @@ public class Calculadora {
 //    }
 
     // 1-Obter a soma de dois numeros
-    public static double formulaSoma(double x, double y){
+    public static double formulaSoma(double x, double y) {
         return x + y;
     }
 
     // 2-Obter o produto de dois numeros
-    public static double formulaProduto(double x, double y){
-        return  x * y;
+    public static double formulaProduto(double x, double y) {
+        return x * y;
     }
 
     // 3-Obter a subtracção de dois números
-    public static double formulaSubtracao(double x, double y){
+    public static double formulaSubtracao(double x, double y) {
         return x - y;
     }
 
     // 4-Obter o quociente de dois números
-    public static double formulaQuociente(double x, double y){
-        return  x / y;
+    public static double formulaQuociente(double x, double y) {
+        return x / y;
     }
 
     // 8-Calcular o valor de x^y
-    public static double calcXelevadoY(double x, double y){
+    public static double calcXelevadoY(double x, double y) {
         return Math.pow(x, y);
     }
 
@@ -48,7 +48,17 @@ public class Calculadora {
         return fact;
     }
 
-    // primo para a frente
+
+    //12 12-Converter um numero inteiro decimal para binário
+
+    public static String decimalParaBinario(int x) {
+        return Integer.toBinaryString(x);
+    }
+
+
+}
+
+// primo para a frente
     /*public static boolean verificarSeNumeroEPrimo(int x) {
         for (int j = 2; j < x; j++) {
             if (x % j == 0) {
@@ -60,6 +70,6 @@ public class Calculadora {
         return true;
     }*/
 
-    //Integer.toHexString()
-    //Integer.toHexString();
-}
+//Integer.toHexString()
+//Integer.toHexString();
+
