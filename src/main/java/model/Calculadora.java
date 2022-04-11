@@ -81,7 +81,7 @@ public class Calculadora {
 
 
     // 10-primo para a frente
-    public static boolean verificarSeNumeroEPrimo(int x) {
+    /*public static boolean verificarSeNumeroEPrimo(int x) {
         for (int j = 2; j < x; j++) {
             if (x % j == 0) {
                 System.out.printf("O número %d é primo!", x);
@@ -90,6 +90,25 @@ public class Calculadora {
         }
         System.out.printf("O número %d não é primo!", x);
         return true;
+    }*/
+    // 13 - Converter número binário para decimal
+    public static int binaryToDecimal(int n) {
+        int num = n;
+        int dec_value = 0;
+
+        int base = 1;
+
+        int temp = num;
+        while (temp > 0) {
+            int last_digit = temp % 10;
+            temp = temp / 10;
+
+            dec_value += last_digit * base;
+
+            base = base * 2;
+        }
+
+        return dec_value;
     }
 
     // 14 - Converter um número inteiro decimal para hexadecimal
