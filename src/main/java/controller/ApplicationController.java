@@ -1,3 +1,4 @@
+/*
 package controller;
 
 import model.Numero;
@@ -31,3 +32,4 @@ public class ApplicationController {
         return Numero.verificarSeNumeroEPrimo(x);
     }
 }
+*/

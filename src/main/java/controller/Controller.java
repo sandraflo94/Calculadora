@@ -1,45 +1,35 @@
-/*
 package controller;
 
 import model.Numero;
 
 public class Controller {
 
-    public double getFormulaSubtracao(double x, double y){
+    public double formulaSubtracao(double x, double y) {
         return Numero.formulaSubtracao(x, y);
     }
 
-    public double getFormulaSoma(){
-        return  Numero.formulaSoma();
+    public double formulaAdicao(double x, double y) {
+        return Numero.formulaAdicao(x, y);
     }
 
-    public double getFormulaQuociente( double x, double y){
-        return Numero.formulaQuociente (x,y);
-
+    public double formulaMultiplicacao(double x, double y) {
+        return Numero.formulaMultiplicacao(x, y);
     }
 
-    public double getFormulaProduto(){
-        return Numero.formulaProduto();
-
+    public double formulaDivisao(double x, double y) {
+        return Numero.formulaDivisao(x, y);
     }
 
-    public void mostrarResultado(){
-        Numero.mostrarResultado();
+    //calcular o valor de X elevado a Y
+    public double calcXelevadoY(double x, double y) {
+        return Numero.calcXelevadoY(x, y);
     }
 
-    public  boolean getVerificarNumeroPrimo(){
-        Numero.verifarNumeroPrimo();
-        return true;
+    public double factorial(double x) {
+        return Numero.factorial(x);
     }
 
-    public double getCalculoFatorial() {
-        return  Numero.calcularFatorial();;
+    public boolean verificarSeNumeroEPrimo(int x) {
+        return Numero.verificarSeNumeroEPrimo(x);
     }
-
-
-    public double getCalculoXelevadoY(){
-        return Numero.calcXelevadoY();
-    }
-
-
-}*/
+}
