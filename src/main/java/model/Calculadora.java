@@ -38,10 +38,27 @@ public class Calculadora {
         return Math.pow(x, y);
     }
 
-    // 9-Calcular o fatorial de um número
-//    public double formulaFactorial(){
-//        return ;
-//    }
+    // 9-Factorial de um número
+    public static double factorial(double x) {
+        int fact = 1;
+        for (int i = 1; i <= x; i++) {
+            fact *= i;
+        }
+
+        return fact;
+    }
+
+    // primo para a frente
+    /*public static boolean verificarSeNumeroEPrimo(int x) {
+        for (int j = 2; j < x; j++) {
+            if (x % j == 0) {
+                System.out.printf("O número %d é primo!", x);
+                return false;
+            }
+        }
+        System.out.printf("O número %d não é primo!", x);
+        return true;
+    }*/
 
     //Integer.toHexString()
     //Integer.toHexString();

@@ -1,4 +1,4 @@
-package controller;
+package Controller;
 
 import model.Calculadora;
 
@@ -31,9 +31,9 @@ public class Controller {
             return true;
         }*/
 
-       // public double getCalculoFatorial() {
-          //  return  Calculadora.calcularFatorial();;
-      //  }
+        public double getCalculoFatorial(double x) {
+            return  Calculadora.factorial(x);
+        }
 
 
        // public double getCalculoXelevadoY(){

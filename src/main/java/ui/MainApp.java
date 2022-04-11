@@ -1,7 +1,5 @@
 package ui;
 
-import static javafx.application.Application.launch;
-
 import model.Calculadora;
 
 import java.util.Scanner;
@@ -83,13 +81,14 @@ public class MainApp {
                     System.out.println(Calculadora.calcXelevadoY(x, y));
                     break;
                 }
-//            case 9: {
-//                System.out.println("Indique o número");
-//                double x = ler.nextDouble();
-//                System.out.println(Calculadora.factorial(x));
-                // break;
-//            }
+                case 9: {
+                    System.out.println("Indique o número");
+                    x = ler.nextDouble();
+                    System.out.println(Calculadora.factorial(x));
+                    // break;
+                }
             }
-        } while (opcao != 0);
+        }
+        while (opcao != 0);
     }
 }
