@@ -3,6 +3,7 @@ package ui;
 import model.Calculadora;
 
 import java.util.Collections;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
@@ -41,8 +42,8 @@ public class MainApp {
         int z;
 
         do {
-            System.out.println("\n1-Soma\n2-Produto\n3-Subtração\n4-Quociente\n5-Memorizar\n6-Reaproveitar\n8-x^y\n9-Factorial\n0-Sair.\n" +
-                    "Qual a operação que quer realizar?\n11-Verificar se o número é igual à soma dos cubos\n12-Decimal para Binário\n13-Binário para Decimal\n14-Indique um número");
+            System.out.println("Qual a operação que quer realizar?\n1-Soma\n2-Produto\n3-Subtração\n4-Quociente\n5-Memorizar\n6-Reaproveitar\n8-x^y\n9-Factorial\n" +
+                    "11-Verificar se o número é igual à soma dos cubos\n12-Decimal para Binário\n13-Binário para Decimal\n14-Decimal para Hexadecimal\n0-Sair");
             opcao = ler.nextInt();
             switch (opcao) {
                 case 1: {
@@ -98,7 +99,7 @@ public class MainApp {
                     break;
                 }
 
-                case 12:{
+                case 12: {
                     System.out.println("Indique o número");
                     x = ler.nextDouble();
                     System.out.println(Calculadora.decimalParaBinario((int) x));
@@ -111,13 +112,19 @@ public class MainApp {
                     break;
                 }
                 case 14: {
-                    System.out.println("Indique o número");
-                    x = ler.nextDouble();
-                    System.out.println(Calculadora.converterHexadecimal(x));
-                    break;
+                    try {
+                        System.out.println("Indique o número");
+                        x = ler.nextDouble();
+                        System.out.println(Calculadora.converterHexadecimal(x));
+                        break;
+                    } catch (InputMismatchException n) {
+                        System.out.println("Não foi introduzido um número!\n");
+                        ler.nextLine();
+                    }
                 }
             }
-        }
-        while (opcao != 0);
+
+
+        }while (opcao != 0) ;
     }
 }
