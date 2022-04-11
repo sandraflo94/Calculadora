@@ -29,8 +29,8 @@ public class Calculadora {
     }
 
     // 4-Obter o quociente de dois números
-    public static double formulaQuociente(double x, double y){
-        return  x / y;
+    public static double formulaQuociente(double x, double y) {
+        return x / y;
     }
 
     // 8-Calcular o valor de x^y
@@ -47,9 +47,28 @@ public class Calculadora {
 
         return fact;
     }
+    //11-Verificar se um dado numero é a soma dos cubos(^3) do digitos que o compôem
+    public static boolean verificarSomaCubos( int x){
 
-    // primo para a frente
-    /*public static boolean verificarSeNumeroEPrimo(int x) {
+            int sum = 0;
+            for (int i=0; i<=x; i++)
+                sum += x*x*x;
+        return sum == x;
+    }
+
+
+
+    //12 12-Converter um numero inteiro decimal para binário
+
+    public static String decimalParaBinario(int x) {
+        return Integer.toBinaryString(x);
+    }
+
+
+
+
+// primo para a frente
+    public static boolean verificarSeNumeroEPrimo(int x) {
         for (int j = 2; j < x; j++) {
             if (x % j == 0) {
                 System.out.printf("O número %d é primo!", x);
@@ -58,8 +77,10 @@ public class Calculadora {
         }
         System.out.printf("O número %d não é primo!", x);
         return true;
-    }*/
+    }
 
-    //Integer.toHexString()
-    //Integer.toHexString();
+    // 14 - Converter um número inteiro decimal para hexadecimal
+    public static String converterHexadecimal(double x) {
+        return Double.toHexString(x);
+    }
 }

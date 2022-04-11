@@ -2,6 +2,7 @@ package ui;
 
 import model.Calculadora;
 
+import java.util.Collections;
 import java.util.Scanner;
 
 
@@ -39,7 +40,7 @@ public class MainApp {
 
         do {
             System.out.println("\n1-Soma\n2-Produto\n3-Subtração\n4-Quociente\n8-x^y\n9-Factorial\n0-Sair.\n" +
-                    "Qual a operação que quer realizar?\n");
+                    "Qual a operação que quer realizar?\n11-Verificar se o número é igual à soma dos cubos\n14-Indique um número");
             opcao = ler.nextInt();
             switch (opcao) {
                 case 1: {
@@ -86,6 +87,20 @@ public class MainApp {
                     x = ler.nextDouble();
                     System.out.println(Calculadora.factorial(x));
                     // break;
+                }
+
+                case 11: {
+                    System.out.println("Indique o número");
+                    x = ler.nextDouble();
+                    System.out.println(Calculadora.verificarSomaCubos((int) x));
+                    break;
+                }
+
+                case 14: {
+                    System.out.println("Indique o número");
+                    x = ler.nextDouble();
+                    System.out.println(Calculadora.converterHexadecimal(x));
+                    break;
                 }
             }
         }
